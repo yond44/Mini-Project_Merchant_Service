@@ -15,7 +15,7 @@ export const authToken = async (req, res, next) => {
                 username: decoded.username
             }
         });
-    if (req.cookies.refreshToken == null) return res.sendStatus("401")
+    
         next();
     });
     
