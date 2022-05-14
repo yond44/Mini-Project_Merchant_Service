@@ -16,7 +16,7 @@ export const productsList = async (req, res) => {
 };
  
 
-asdf
+
 
 export const inputProduct = async (req,res) => {
     const merchant= await merchants.findOne({
