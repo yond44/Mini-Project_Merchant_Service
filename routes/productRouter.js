@@ -10,6 +10,6 @@ productRouter.get('/myProducts',authToken, getProducts)
 productRouter.put('/myProducts/:username', authToken, updateProduct);
 productRouter.delete('/myProducts/:username', authToken, deleteProduct);
 productRouter.delete('/deleteAllProducts', authToken, deleteAllProducts);
-adf
+
 
 export default productRouter
