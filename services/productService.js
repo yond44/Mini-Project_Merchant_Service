@@ -132,32 +132,5 @@ export const deleteProduct = async (req,res) =>{
 };
 
 
-export const deleteAllProducts = async(req, res) => {
-    const merchant = await merchants.findOne({
-        where:{
-            username: req.header.username
-        }
-    });
-    
-    const validation = await products.findOne({
-        where : {
-            merchant_id: merchant.id
-        }
-    });
-    
 
-    try {
-        if (validation.merchant_id !== merchant.id) return res.status(404).send("Product not found");
-        await products.destroy({
-            where: {
-                merchant_id : merchant.id
-            }
-        });
-        
-        res.send("deleted")
-    } catch (error) {
-        res.sendStatus(400)
-        
-    };
-};
 
