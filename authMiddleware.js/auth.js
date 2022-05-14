@@ -20,4 +20,3 @@ export const authToken = async (req, res, next) => {
     });
     
 };
-asdf
