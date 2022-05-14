@@ -1,6 +1,6 @@
 # **NOTE**
 
-In this mini project I did more than what I asked to. I use this mini project as my oppurtunity to explore and learn  more about API and backend, that's why I would like to get some advice, pointers and critics from mas Abduh for my mini project whether it works well or not on LMS comment section or even discord. 
+In this mini project I did more than what I asked to. I use this mini project as my oppurtunity to explore and learn  more about API and backend, that's why I would be very happy to get some advice, pointers and critics from mas Abduh for my mini project whether it works well or not on LMS comment section or even discord. 
 
 
 
