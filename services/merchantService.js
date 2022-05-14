@@ -197,13 +197,8 @@ export const delAccount = async(req, res) => {
         await merchant.destroy()
         
         res.send("account deleted")
-
-// this "catch" is to delete an account if merchant never input products into database or don't have products in database 
-// without this an account that never input products can't be deleted, and I still don't know a better solution for this
-    } catch (success) {
-        await merchant.destroy()
-        res.send("account deleted")
-        
+    } catch (error) {
+        res.sendStatus(400)     
     };
 };
 
